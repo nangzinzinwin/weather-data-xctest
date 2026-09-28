@@ -4,13 +4,15 @@
 
 A Swift temperature conversion project that uses XCTest to validate greenhouse sensor data, including standard conversions, missing readings, absolute zero, and invalid or out-of-range values.
 
-# Weather Data XCTest
-
-A Swift project for testing temperature conversion logic in a greenhouse climate control scenario.
-
 ## Overview
 
-The project converts temperature readings from Kelvin to Celsius and Fahrenheit and tests how the system handles normal, missing, and invalid sensor data.
+The project converts Kelvin temperature readings to Celsius and Fahrenheit.
+
+It also validates sensor data before conversion to handle:
+
+- Missing temperature readings
+- Temperatures below absolute zero
+- Out-of-range sensor readings
 
 ## Project Structure
 
@@ -28,12 +30,13 @@ weather-data-xctest/
 
 Unit tests are written using XCTest and cover:
 
-- Standard temperature conversions
+- Kelvin to Celsius conversion
+- Kelvin to Fahrenheit conversion
 - Conversion consistency
 - Absolute zero
-- Missing temperature readings
-- Invalid Kelvin values
-- Out-of-range sensor readings
+- Missing readings
+- Negative Kelvin values
+- Out-of-range readings
 
 ## Workflow
 
@@ -43,6 +46,10 @@ Unit tests are written using XCTest and cover:
 4. Test normal and edge-case inputs.
 5. Review and fix failing tests.
 6. Document the test results.
+   
+## Continuous Integration
+
+GitHub Actions automatically runs the XCTest suite on a macOS runner when changes are pushed to `main` or a pull request targets `main`.
 
 ## Status
 
