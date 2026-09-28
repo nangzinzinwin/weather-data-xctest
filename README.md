@@ -1,5 +1,11 @@
 # Weather Data XCTest
 
+[![Swift Tests](https://github.com/nangzinzinwin/weather-data-xctest/actions/workflows/test.yml/badge.svg)](https://github.com/nangzinzinwin/weather-data-xctest/actions/workflows/test.yml)
+
+A Swift temperature conversion project that uses XCTest to validate greenhouse sensor data, including standard conversions, missing readings, absolute zero, and invalid or out-of-range values.
+
+# Weather Data XCTest
+
 A Swift project for testing temperature conversion logic in a greenhouse climate control scenario.
 
 ## Overview
