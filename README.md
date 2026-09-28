@@ -8,6 +8,7 @@ The project converts temperature readings from Kelvin to Celsius and Fahrenheit 
 
 ## Project Structure
 
+```
 weather-data-xctest/
 ├── Sources/
 │   └── TemperatureConverter.swift
@@ -15,6 +16,7 @@ weather-data-xctest/
 │   └── TemperatureConverterTests.swift
 ├── Package.swift
 └── README.md
+```
 
 ## Testing
 
